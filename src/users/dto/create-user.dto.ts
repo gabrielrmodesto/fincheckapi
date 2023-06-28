@@ -10,7 +10,7 @@ export class CreateUserDto {
   @IsEmail()
   email: string;
 
-  @IsString()
+  @IsString({ message: 'A senha precisa ser maior ou igual a 8 caracteres' })
   @IsNotEmpty()
   @MinLength(8)
   password: string;
