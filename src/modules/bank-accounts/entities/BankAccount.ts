@@ -1,4 +1,4 @@
-export enum BankAccountType {
+export enum BankAccountList {
   CHECKING = 'CHECKING',
   INVESTMENT = 'INVESTMENT',
   CASH = 'CASH',

@@ -9,6 +9,7 @@ export class BankAccountsService {
 
   create(userId: string, createBankAccountDto: CreateBankAccountDto) {
     const { color, initialBalance, name, type } = createBankAccountDto;
+
     return this.bankAccountsRepo.create({
       data: {
         userId,

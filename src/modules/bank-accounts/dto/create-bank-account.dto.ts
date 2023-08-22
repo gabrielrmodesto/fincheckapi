@@ -5,7 +5,7 @@ import {
   IsNumber,
   IsString,
 } from 'class-validator';
-import { BankAccountType } from '../entities/BankAccount';
+import { BankAccountList } from '../entities/BankAccount';
 
 export class CreateBankAccountDto {
   @IsString()
@@ -22,6 +22,6 @@ export class CreateBankAccountDto {
   color: string;
 
   @IsNotEmpty()
-  @IsEnum(BankAccountType)
-  type: BankAccountType;
+  @IsEnum(BankAccountList)
+  type: BankAccountList;
 }
